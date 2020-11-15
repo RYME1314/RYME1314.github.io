@@ -422,6 +422,54 @@
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false || false,
+      notify     : true || true,
+      appId      : 'D2j0W12FrzAJhmp7Sze3og6v-MdYXbMMI' || D2j0W12FrzAJhmp7Sze3og6v-MdYXbMMI ,
+      appKey     : 'OTDenm3S22UwJCfeoT15NxWN' || OTDenm3S22UwJCfeoT15NxWN ,
+      placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!" || ヾﾉ≧∀≦)o来啊，快活啊! ,
+      avatar     : 'mm' || mm,
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true || true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://cdn.jsdelivr.net/gh/lete114/CDN/Valine/Valine-Lete3.2-min.js'
+      master    : 89EA096CCEFE608DE0F2A26BA737A651,
+      emojiCDN: '#{theme.valine.emojiCDN}',
+      emojiMaps: !{emojiMaps},
+      enableQQ: #{theme.valine.enableQQ},
+      requiredFields: requiredFields,
+      emojiMaps: {
+              "1":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/1.gif",
+              "001":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/001.png",
+              "002":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/002.png",
+              "003":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/003.png",
+              "004":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/004.png",
+              "005":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/005.png",
+              "006":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/006.png",
+              //- 图片过多，我这里就省略了
+              "0103":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/103.jpg",
+              "0104":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/104.jpg",
+              "0105":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/105.jpg",
+              "0106":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/106.gif"
+          }
+    });
+  }, window.Valine);
+});
+</script>
+
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
 </body>
