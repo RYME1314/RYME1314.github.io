@@ -24,11 +24,11 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/undefined/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.zyang.wang","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"www.zyang.wang","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
   </script>
 
   <meta name="description" content="1.主题与故事1.1游戏剧本创作流程游戏剧本的创作过程包括两个阶段：分别是策划阶段与剧本制作阶段 策划阶段:确定方向和内容，确定游戏的根本与根基； 剧本制作阶段:遵循策划内容创作，也因此在策划阶段之后">
@@ -40,7 +40,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="e:/hexo/source_posts/pic001.jpg">
 <meta property="article:published_time" content="2020-11-11T20:19:54.000Z">
-<meta property="article:modified_time" content="2020-11-12T12:47:37.715Z">
+<meta property="article:modified_time" content="2020-11-16T13:43:31.714Z">
 <meta property="article:author" content="炭炭">
 <meta property="article:tag" content="游戏剧本怎么写">
 <meta property="article:tag" content="读书笔记">
@@ -92,8 +92,6 @@
 </noscript>
 
   
-  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -131,29 +129,44 @@
 
 <nav class="site-nav">
   <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-主页">
+        <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="home fa-fw"></i>主页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-读书">
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-studying">
+
+    <a href="/studying/" rel="section"><i class="studying fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-interview">
+
+    <a href="/interview/" rel="section"><i class="interview fa-fw"></i>面经</a>
+
+  </li>
+        <li class="menu-item menu-item-reading">
 
     <a href="/reading/" rel="section"><i class="reading fa-fw"></i>读书</a>
 
   </li>
-        <li class="menu-item menu-item-偶记">
+        <li class="menu-item menu-item-oodiary">
 
     <a href="/oodiary/" rel="section"><i class="oodiary fa-fw"></i>偶记</a>
-
-  </li>
-        <li class="menu-item menu-item-档案">
-
-    <a href="/archives/" rel="section"><i class="archives fa-fw"></i>档案</a>
-
-  </li>
-        <li class="menu-item menu-item-相关">
-
-    <a href="/about/" rel="section"><i class="user fa-fw"></i>相关</a>
 
   </li>
   </ul>
@@ -214,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-11-12 12:47:37" itemprop="dateModified" datetime="2020-11-12T12:47:37Z">2020-11-12</time>
+                <time title="修改时间：2020-11-16 13:43:31" itemprop="dateModified" datetime="2020-11-16T13:43:31Z">2020-11-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,33 +235,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BB%E4%B9%A6/" itemprop="url" rel="index"><span itemprop="name">读书</span></a>
+                  <a href="/categories/reading/" itemprop="url" rel="index"><span itemprop="name">reading</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/studying/" itemprop="url" rel="index"><span itemprop="name">studying</span></a>
                 </span>
             </span>
 
           
-            <span id="/2020/11/12/%E3%80%8A%E6%B8%B8%E6%88%8F%E5%89%A7%E6%9C%AC%E6%80%8E%E4%B9%88%E5%86%99%E3%80%8B%E7%AC%94%E8%AE%B0%E4%B8%80/" class="post-meta-item leancloud_visitors" data-flag-title="《游戏剧本怎么写》笔记一" title="热度">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">热度：</span>
-              <span class="leancloud-visitors-count"></span>
-              <span>℃</span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/11/12/%E3%80%8A%E6%B8%B8%E6%88%8F%E5%89%A7%E6%9C%AC%E6%80%8E%E4%B9%88%E5%86%99%E3%80%8B%E7%AC%94%E8%AE%B0%E4%B8%80/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/11/12/%E3%80%8A%E6%B8%B8%E6%88%8F%E5%89%A7%E6%9C%AC%E6%80%8E%E4%B9%88%E5%86%99%E3%80%8B%E7%AC%94%E8%AE%B0%E4%B8%80/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 
         </div>
       </header>
@@ -445,7 +440,6 @@
 
           </div>
           
-    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -504,13 +498,14 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">3</span>
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
@@ -519,6 +514,9 @@
       </div>
   </nav>
 </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
 
@@ -571,9 +569,9 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/undefined/anime.min.js"></script>
+  <script src="/undefined/velocity/velocity.min.js"></script>
+  <script src="/undefined/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
@@ -608,55 +606,5 @@
 
   
 
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : false || false,
-      notify     : true || true,
-      appId      : 'D2j0W12FrzAJhmp7Sze3og6v-MdYXbMMI' || D2j0W12FrzAJhmp7Sze3og6v-MdYXbMMI ,
-      appKey     : 'OTDenm3S22UwJCfeoT15NxWN' || OTDenm3S22UwJCfeoT15NxWN ,
-      placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!" || ヾﾉ≧∀≦)o来啊，快活啊! ,
-      avatar     : 'mm' || mm,
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : true || true,
-      lang       : '' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : 'https://cdn.jsdelivr.net/gh/lete114/CDN/Valine/Valine-Lete3.2-min.js'
-      master    : 89EA096CCEFE608DE0F2A26BA737A651,
-      emojiCDN: '#{theme.valine.emojiCDN}',
-      emojiMaps: !{emojiMaps},
-      enableQQ: #{theme.valine.enableQQ},
-      requiredFields: requiredFields,
-      emojiMaps: {
-              "1":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/1.gif",
-              "001":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/001.png",
-              "002":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/002.png",
-              "003":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/003.png",
-              "004":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/004.png",
-              "005":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/005.png",
-              "006":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/006.png",
-              //- 图片过多，我这里就省略了
-              "0103":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/103.jpg",
-              "0104":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/104.jpg",
-              "0105":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/105.jpg",
-              "0106":"https://cdn.jsdelivr.net/gh/lete114/CDN/emoji/106.gif"
-          }
-    });
-  }, window.Valine);
-});
-</script>
-
-  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
 </body>
 </html>
